@@ -1,0 +1,258 @@
+* {
+    font-family: "Open Sans" ,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    color: #fff;
+    background-color: #181818;
+}
+
+nav {
+    width: 100%;
+    padding: 10px;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    
+
+}
+
+nav a:hover {
+    background-color: red;
+    transition: 0.5s;
+    
+}
+
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.home-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: red;
+}
+.home-section p {
+    font-size: 24px;
+}
+
+.about-section {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.about-section img {
+    height: 250px;
+    width:250px;
+    object-fit: cover;
+    border-radius: 50% ;
+    border: 1px solid var(--background-color1);
+}
+
+.about-section .about-text {
+    width: 500px;
+}
+
+
+.about-text h4 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    
+}
+
+.about-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.about-text button {
+    margin-top: 20px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    background-color: red;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+
+}
+.about-text button:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.services-section {
+    padding-top: 70px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-section p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.services-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:300px;
+    width: 250px;
+    padding: 20px ;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.services-box h4 {
+    color: red;
+}
+.services-box p{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.portofolio-section {
+    margin-top: 70px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portofolio-section p {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.portofolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.project-tile {
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.project-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-container a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-container a:hover {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+footer {
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        font-size: 80%;
+    }
+
+    .home-section h1 {
+        font-size: 32px;
+    }
+    .home-section p  {
+        font-size: 18px;
+    }
+
+
+    .about-section img {
+        margin-top: 20px ;
+        width: 200px;
+        height: auto;
+    }
+
+    .about-text {
+        margin-top: -50px;
+        padding: 40px;
+        font-size: 12px;
+    }
+
+    .services-section {
+        margin-top: -50px;
+    }
+    .services-container {
+        gap: 20px;
+    }
+}
